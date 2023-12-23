@@ -214,45 +214,34 @@ html {
 } */
 
 /* sticky-navigation-css */
-section {
+.hero {
   height: 100vh;
+}
+.page_section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 #about,
 #contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
 }
 #portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 #services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
-#about h2,
-#contact h2,
-#portfolio h2 {
-  font-size: 4rem;
+.section-title{
+  font-size: 2.5rem;
   color: var(--color2);
+  text-align: center;
+  padding-top: 3rem;
 }
-#services h2 {
-  font-size: 4rem;
-  color: var(--color2);
-}
-a.active {
-  /* background: var(--color2);
-  color: var(--primary); */
-}
-/* .sticky .home.active {
-  background: var(--primary);
-  color: var(--color2);
-} */
+
 section:nth-of-type(odd) {
   background: rgb(240, 240, 240);
 }
@@ -374,7 +363,7 @@ section:nth-of-type(odd) {
 
 .footer{
   background-color: var(--primary);;
-  height: 100px;
+  height: 150px;
 
   display: flex;
   flex-direction: row;
@@ -505,7 +494,7 @@ input[type=submit]:hover {
 /* -------- cotnact */
 .slide_parallax {
   /* The image used */
-  background-image: url("images/parallax1.jpg");
+  background-image: url("images/parallax1.jpg") !important;
 
   /* Set a specific height */
   height: 100%; 
@@ -530,3 +519,16 @@ input[type=submit]:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#bottomLOGOsvg {
+  width: 120px;
+}
+
+#bottomLOGOsvg .cls-1 {
+  fill: var(--color1);
+}
+
+#bottomLOGOsvg .cls-2 {
+  fill: var(--color2);
+}
+
